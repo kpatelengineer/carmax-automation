@@ -1,0 +1,25 @@
+{
+  "name": "carmax-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "ts-node ./src/utils/report-cleanup.js", 
+    "test": "playwright test",
+    "allure:report": "allure generate allure-results --clean -o allure-report && allure open allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "allure-commandline": "^2.33.0",
+    "allure-playwright": "^3.2.0",
+    "dotenv": "^16.4.7",
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.0",
+    "@types/node": "^22.13.10",
+    "ts-node": "^10.9.1"
+  }
+}
